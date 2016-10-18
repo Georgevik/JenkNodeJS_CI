@@ -1,0 +1,28 @@
+{
+  "name": "JenkNodeJS_CI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georgevik/JenkNodeJS_CI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Georgevik/JenkNodeJS_CI/issues"
+  },
+  "homepage": "https://github.com/Georgevik/JenkNodeJS_CI#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "should": "^11.1.1",
+    "supertest": "^2.0.0"
+  }
+}
