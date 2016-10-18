@@ -13,7 +13,7 @@ var server = supertest.agent("http://localhost:4000");
 
 // UNIT test begin
 
-describe("SAMPLE Unit test",function(){
+describe("SAMPLE unit test",function(){
 
 	// #1 should return home page
 	it("should return home page",function(done){
