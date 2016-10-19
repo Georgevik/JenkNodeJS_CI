@@ -1,32 +1,8 @@
-/**
- * Created by Georgevik on 18/10/2016.
- */
+var request = require('supertest');
+var app = require('../app.js');
 
-'use strict';
-
-var supertest = require("supertest");
-var should = require("should");
-
-// This agent refers to PORT where the program is running.
-
-var server = supertest.agent("http://localhost:4000");
-
-// UNIT test begin
-
-describe("SAMPLE unit test",function(){
-
-	// #1 should return home page
-	it("should return Home page",function(done){
-		// calling home page
-		server
-		.get("/")
-		.expect("Content-type",/text/)
-		.expect(200) // THis is HTTP response
-		.end(function(err,res){
-			// HTTP status should be 200
-			res.status.should.equal(200);
-			done();
-		});
-	});
-
+describe('GET /', function() {
+  it('respond with hello world', function(done) {
+    request(app).get('/').expect('hello jenkinss', done);
+  });
 });
