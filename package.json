@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*.js",
+    "ci-test": "istanbul cover mocha \"test/*.js\" > test.tap && istanbul report clover"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,10 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "mocha": "^3.1.2",
     "should": "^11.1.1",
-    "supertest": "^2.0.0"
+    "supertest": "^2.0.0",
+    "tape": "^4.6.2"
   }
 }
